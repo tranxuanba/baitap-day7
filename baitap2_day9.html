@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>KIEM TRA SO NGAY TRONG THANG</h3>
+<input type="Number" min="1" max="12" id="thang" placeholder="nhap thang" style="width: 20%">
+<button onclick="sothang()">check</button>
+<br/>
+<p id="result">day la cho hien thi ket qua</p>
+<script>
+    function sothang() {
+         let thang = document.getElementById("thang").value;
+         thang = Number(thang);
+         switch (thang){
+            case 1:
+                document.write("Thang 1 co 29 ngay");
+                break;
+            case 2:
+                document.write("Thang 2 co 30 ngay");
+                break;
+            case 3:
+                document.write("Thang 3 co 30 ngay");
+                break;
+            case 4:
+                document.write("Thang 4 co 31 ngay");
+                break;
+            case 5:
+                document.write("Thang 5 co 29 ngay");
+                break;
+            case 6:
+                document.write("Thang 6 co 30 ngay");
+                break;
+            case 7:
+                document.write("Thang 7 co 31 ngay");
+                break;
+            case 8:
+                document.write("Thang 8 co 29 ngay");
+                break;
+             case 9:
+                 document.write("Thang 9 co 28 ngay");
+                 break;
+             case 10:
+                 document.write("Thang 10 co 29 ngay");
+                 break;
+             case 11:
+                 document.write("Thang 11 co 29 ngay");
+                 break;
+             case 12:
+                 document.write("Thang 12 co 30 ngay");
+                 break;
+            default:
+                 document.write("moi nhap lai thang");
+        }
+
+    }
+</script>
+</body>
+</html>
